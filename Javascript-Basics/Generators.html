@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // Genrator is a function that genrates/returns an iterator
+
+      function* AGenerator() {
+        console.log("Started..");
+        yield 10; // pauses the execution & partially returns from the fnuction with value 10
+        console.log("After yield");
+      }
+
+      let itr = AGenerator();
+      console.log(itr.next());
+      console.log("Back to execution");
+      console.log(itr.next());
+
+    </script>
+  </head>
+  <body></body>
+</html>
